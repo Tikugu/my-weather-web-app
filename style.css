@@ -1,0 +1,202 @@
+/**********GENERAL STYLES***************/
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: sans-serif;
+}
+header {
+  color: rgba(255, 255, 255, 0.521);
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  text-decoration: underline;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  background-image: url(/tom-barrett-hgGplX3PFBg-unsplash.jpg);
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main {
+  width: 99%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 95%;
+  /* background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143)); */
+  font-family: sans-serif;
+  color: white;
+}
+.main-info {
+  background-color: white;
+}
+.location {
+  text-transform: capitalize;
+  height: 30vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.links {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+}
+a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.397);
+  font-weight: 800;
+}
+a:hover,
+a:focus {
+  color: white;
+}
+.header-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-container {
+  text-align: center;
+  font-weight: 700;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 2px 2px 15px 6px rgba(0, 0, 0, 0.404);
+  background-color: rgba(255, 255, 255, 0.18);
+  background-clip: padding-box;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  border-radius: 5px;
+}
+.day-heads {
+  color: aliceblue;
+  position: relative;
+}
+.today::after {
+  margin-top: 5px;
+  content: "";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.404);
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.secondary-info {
+  text-align: center;
+  box-shadow: 2px 2px 15px 6px rgba(0, 0, 0, 0.404);
+  background-color: rgba(255, 255, 255, 0.18);
+  width: 99vw;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 4px;
+  font-size: 0.9rem;
+}
+.secondary-info p {
+  margin-top: 5px;
+}
+.articles {
+  display: flex;
+  justify-content: space-between;
+}
+/************WEATHER IFNO*******************/
+.temperature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.temperature-description {
+  margin-top: 30px;
+}
+.temp-deg {
+  font-size: 1.6rem;
+}
+.main-extra-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px;
+}
+.degree-span {
+  margin-left: 7px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+/**********FOOTER****************/
+footer {
+  position: absolute;
+  bottom: 0;
+}
+footer p {
+  color: rgba(255, 255, 255, 0.555);
+}
+
+.bounce {
+  animation: bounce 2000ms ease-in-out;
+}
+@keyframes bounce {
+  0% {
+    scale: 1;
+  }
+  25% {
+    scale: 1.3;
+  }
+  50% {
+    scale: 1;
+  }
+  75% {
+    scale: 1.3;
+  }
+  100% {
+    scale: 1;
+  }
+}
+/*********MEDIA QUERIES***************/
+@media (min-width: 800px) {
+  .main {
+    flex-direction: row;
+  }
+  .secondary-info {
+    flex-direction: column;
+    width: 22%;
+    max-width: 200px;
+    height: 50vh;
+    font-size: 1rem;
+  }
+  .articles {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40vh;
+  }
+  .tomorrow::after {
+    margin-top: 5px;
+    content: "";
+    display: block;
+    background-color: rgba(0, 0, 0, 0.404);
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

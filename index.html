@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>weather website</title>
+  </head>
+  <body>
+    <main>
+      <div class="header-div">
+        <header>my weather</header>
+        <div class="links">
+          <a href="https://mobile.twitter.com/Tikugu">Twitter</a>
+          <a href="https://www.tiktk.com/@tikugu">TikTok</a>
+          <a href="https://www.instagram.com/tikugu/">Instagram</a>
+        </div>
+      </div>
+
+      <section class="main">
+        <div class="main-container">
+          <h2 class="today day-heads">Current Weather</h2>
+          <div class="location">
+            <h1 class="location-timezone">timezone</h1>
+            <p class="icon"></p>
+          </div>
+          <div class="main-extra-info">
+            <article class="weather-det">
+              <h3 class="det-head">humidity (%)</h3>
+              <p class="det-info current-humidity"></p>
+            </article>
+            <article class="weather-det">
+              <h3 class="det-head">wind-speed (m/s)</h3>
+              <p class="det-info current-wind-speed"></p>
+            </article>
+            <article class="weather-det">
+              <h3 class="det-head">uvi</h3>
+              <p class="det-info current-uvi"></p>
+            </article>
+            <article class="weather-det">
+              <h3 class="det-head">feels like (C)</h3>
+              <p class="det-info current-feels_like"></p>
+            </article>
+          </div>
+          <div class="temperature">
+            <h2 class="temperature-degree">
+              <span class="temp-deg">0</span><span class="degree-span">C</span>
+            </h2>
+            <div class="temperature-description">Malawi</div>
+          </div>
+        </div>
+        <div class="secondary-info">
+          <h2 class="tomorrow day-heads">Tomorrow</h2>
+          <div class="articles">
+            <article class="weather-det">
+              <h3 class="det-head">humidity (%)</h3>
+              <p class="det-info tomorrow-humidity"></p>
+            </article>
+            <article class="weather-det">
+              <h3 class="det-head">wind-speed (m/s)</h3>
+              <p class="det-info tomorrow-wind-speed"></p>
+            </article>
+            <article class="weather-det">
+              <h3 class="det-head">rain (mm)</h3>
+              <p class="det-info tomorrow-precipitation"></p>
+            </article>
+            <article class="weather-det">
+              <h3 class="det-head">max-temp (C)</h3>
+              <p class="det-info tomorrow-max-temp"></p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p>made by lonje bande</p>
+      </footer>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
